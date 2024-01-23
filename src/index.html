@@ -1,4 +1,66 @@
 ---
-layout: layouts/base.html
-title: "LLM Site"
+title: "LLM Persona"
 ---
+{% extends "layouts/base.html" %}
+{% block content %}
+<main>
+    <section class="research-section">
+        <div class="research">
+            <h2>Research Page</h2>
+            <p>
+                Learn more about our ongoing research efforts
+            </p>
+            <a href="/research/" class="visit-button">Visit Research Page</a>
+        </div>
+        <div>
+            <img id="transparent-image" src="/assets/images/llm-research.png" alt="LLM Research photo">
+        </div>
+    </section>
+
+    <section class="journal-section">
+        <div class="journal-img">
+            <img src="/assets/images/taxi-smiling-woman-reading-book-after-book.png" alt="Journal club">
+            <img src="/assets/images/taxi-young-man-reading-book-and-studying-science.png" alt="Journal club">
+        </div>
+        <div class="journal">
+            <h2>Journal Club</h2>
+            <p>
+                Learn about our journal club
+                <br>
+                Explore the realm of research on Large Language Models.
+            </p>
+            <a href="/journal/" class="visit-button">Visit Journal Club</a>
+        </div>
+    </section>
+
+    <section class="people-section">
+        <h2>People Page</h2>
+        <p>
+            Meet the talented individuals who form our research team.
+            
+        </p>
+        <p>
+            Learn about their backgrounds, roles, and contributions to our projects.
+        </p>
+        <a href="/people/" class="visit-button">Visit People Page</a>
+    </section>
+    <section>
+        <h2>Contact</h2>
+        <p>
+            Have questions? Let us know!
+        </p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+{% endblock %}

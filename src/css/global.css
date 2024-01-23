@@ -1,2 +1,181 @@
-@import url('./reset.css'); 
-/* typography */
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --section-color: #fef7e9;
+    --background-color: #9A9899;
+    --primary-color: #c15b35;
+    --header-color: #37261b;
+    --header-font-color: #ed9f33;
+    --main-font: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: var(--main-font);
+    padding-top: 15vh;
+    width: 100%;
+    min-height:100vh;
+    font-size: 21px;
+}
+
+main{
+    width: 100%;
+}
+h1{
+    margin: 1em;
+    color: var(--primary-color)
+}
+header {
+    background-color: var(--header-color);
+    color: var(--header-font-color);
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+nav a {
+    text-decoration: none !important;
+    color: var(--header-font-color) !important;
+    margin: 0 10px !important;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline !important;
+    text-decoration-thickness: 1rem;
+    text-underline-offset: 1rem;;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--section-color);
+    width: 100%;
+    min-height: 30vh;
+
+}
+.logo{
+    /* display: inline-block;
+    vertical-align: top; */
+    width: 200px;
+    height: 70px;
+    margin-right:auto;
+}
+h2 {
+    color: #333;
+    margin: 10px 0px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+main a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+header div {
+    display: flex;
+    font-size: 1.5em;
+}
+header div:hover{
+    background-color: none;
+}
+.visit-button {
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--section-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: var(--header-font-color);
+}
+form {
+    margin: 20px;
+    width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--section-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    
+}
+
+button:hover {
+    background-color: var(--header-font-color);
+}
+#transparent-image{
+    opacity: 0.7;
+}
+.research{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.journal{
+    display: flex;
+    flex-direction: column;
+}
+.journal-img{
+    display: flex;
+}
