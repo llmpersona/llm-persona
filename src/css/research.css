@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.overview, .contrastive, .challenge, .tda{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    margin: 1em 0;
+}
